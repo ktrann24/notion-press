@@ -1,0 +1,27 @@
+{
+  "name": "notion-press",
+  "version": "0.1.0",
+  "description": "Use Notion as a CMS for any static site — a single script plus a GitHub Action that syncs published posts from a Notion database into your repo as HTML.",
+  "main": "fetch-notion.js",
+  "scripts": {
+    "fetch": "node fetch-notion.js",
+    "deploy": "node fetch-notion.js --push"
+  },
+  "keywords": [
+    "notion",
+    "cms",
+    "static-site",
+    "blog",
+    "github-actions",
+    "notion-api"
+  ],
+  "author": "Khiet Tran",
+  "license": "MIT",
+  "dependencies": {
+    "@notionhq/client": "^2.2.14",
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
